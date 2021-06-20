@@ -1,2 +1,2 @@
-# crackycookie.github.io
-http://crackycookie.github.io
+# README
+https://crackycookie.github.io
