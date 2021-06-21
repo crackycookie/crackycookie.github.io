@@ -2,6 +2,17 @@ $bg-colour: #202225;
 $font-colour: rgba(255, 255, 255, 0.9);
 $font: 'Poppins';
 
+#check-center {
+  border-left: 1px solid red;
+  height: 500vh;
+  position: absolute;
+  left: 50vw;
+  z-index: 99;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   background-color: $bg-colour;
@@ -10,10 +21,10 @@ body {
   font-style: normal;
   position: relative;
   top: 90px;
+
 }
 
 .card {
-  margin-right: 20px;
   border-radius: 10px 10px 10px 10px !important;
 
   img {
@@ -59,8 +70,64 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
 
-  text-align: center;
+  display: flex;
+  flex-flow: row;
+
+  //justify-content: space-between;
+  align-items: center;
+
+  .footer-left {
+    font-size: 14px;
+    font-weight: 300;
+
+    padding: 0 0 0 30px;
+
+    display: flex;
+  }
+
+  .footer-center {
+    display: flex;
+    justify-content: center;
+
+    .footer-menu-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 30px;
+    }
+  }
+
+  .footer-right {
+    //display: flex;
+  }
 }
+
+.iconify {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px
+}
+
+//scrollbar
+///* width */
+//::-webkit-scrollbar {
+//  width: 12px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//  background: $bg-colour;
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//  background: rgba(255, 255, 255, 0.2);
+//  border-radius: 10px;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//  background: rgba(255, 255, 255, 0.3);
+//}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {

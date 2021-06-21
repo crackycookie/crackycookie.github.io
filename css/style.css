@@ -1,3 +1,15 @@
+#check-center {
+  border-left: 1px solid red;
+  height: 500vh;
+  position: absolute;
+  left: 50vw;
+  z-index: 99;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: #202225;
   color: rgba(255, 255, 255, 0.9);
@@ -8,7 +20,6 @@ body {
 }
 
 .card {
-  margin-right: 20px;
   border-radius: 10px 10px 10px 10px !important;
 }
 .card img {
@@ -46,7 +57,30 @@ body {
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  text-align: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.footer .footer-left {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 0 30px;
+  display: flex;
+}
+.footer .footer-center {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-center .footer-menu-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 30px;
+}
+
+.iconify {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
