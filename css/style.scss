@@ -74,6 +74,16 @@ body {
   flex-flow: row;
   align-items: center;
 
+  a {
+    color: $font-colour;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+
   .footer-left {
     font-size: 14px;
     font-weight: 300;
