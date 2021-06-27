@@ -16,7 +16,28 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   position: relative;
-  top: 60px;
+  top: 4vh;
+  bottom: 5vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 90px;
+}
+
+.index-container {
+  margin: 25px 20px;
+}
+.index-container .subheading {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+.index-container .context {
+  font-weight: normal;
+  font-size: 50px;
 }
 
 .card {
@@ -66,7 +87,7 @@ body {
   text-decoration: none;
 }
 .footer a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
 }
 .footer .footer-left {
